@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    <files-upload></files-upload>
+    <file-browser></file-browser>
 @endsection

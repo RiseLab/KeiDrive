@@ -11108,6 +11108,10 @@ a.text-dark:focus {
   cursor: pointer;
 }
 
+.bg-ffffffcc {
+  background-color: #ffffffcc;
+}
+
 textarea {
   resize: none;
 }

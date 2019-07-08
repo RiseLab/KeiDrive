@@ -21,5 +21,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::middleware('auth')->group(function () {
 	Route::get('/files', 'FileController@index');
+	Route::get('/files/download/{id}', 'FileController@download');
 	Route::post('/files', 'FileController@store');
+	Route::put('/files/{id}', 'FileController@update');
+	Route::delete('/files/{id}', 'FileController@destroy');
 });
