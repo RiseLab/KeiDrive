@@ -19,7 +19,7 @@ class CreateFilesTable extends Migration
             $table->string('path');
             $table->string('icon');
             $table->string('title');
-            $table->string('description');
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }

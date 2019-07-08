@@ -19,4 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('files', 'FileController')->middleware('auth');
+Route::middleware('auth')->group(function () {
+	Route::get('/files', 'FileController@index');
+	Route::post('/files', 'FileController@store');
+});
